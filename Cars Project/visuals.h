@@ -1,4 +1,22 @@
+struct point
+{
+	float x;
+	float y;
+	float z;
+};
 
+struct face
+{
+	int vtx[3];
+};
+
+typedef struct model
+{
+	point obj_points[10];
+	face obj_faces[4];
+	int vertices;
+	int faces;
+} model;
 
 
 //-------- Functions --------------------------------
