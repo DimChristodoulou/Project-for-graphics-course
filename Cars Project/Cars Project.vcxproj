@@ -127,8 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Desktop\Lab1\visuals.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="visuals.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\Desktop\Lab1\visuals.h" />
