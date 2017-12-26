@@ -88,7 +88,6 @@ void Setup()  // DON'T TOUCH IT
 	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
 
 	glEnable(GL_CULL_FACE);
-	glFrontFace(GL_CW);
 
 	//01
 	glFrontFace(GL_CCW);
@@ -107,7 +106,7 @@ void ReadFile(model* md)
 
 	char identifier;
 	obj_file >> md->vertices;                               // Get the number of vertices
-	printf("%d\n", md->vertices);
+	//printf("%d\n", md->vertices);
 
 
 	obj_file >> identifier;
@@ -125,6 +124,7 @@ void ReadFile(model* md)
 	}
 
 	obj_file >> md->faces;									// Get the number of faces
+	//cout << "faces: " << md->faces << endl;
 	obj_file >> identifier;
 	i = 0;
 	while (identifier == 'f') {                        // Get the face structure
