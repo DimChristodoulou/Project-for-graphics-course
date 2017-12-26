@@ -12,10 +12,11 @@ struct face
 
 typedef struct model
 {
-	point obj_points[10];
-	face obj_faces[4];
 	int vertices;
 	int faces;
+	point obj_points[17006];
+	face obj_faces[35673];
+
 } model;
 
 

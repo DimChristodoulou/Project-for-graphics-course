@@ -12,8 +12,7 @@ int main(int argc, char** argv)
 	// - Enable double buffering for faster window update
 	// - Allocate a Depth-Buffer in the system memory or 
 	//   in the video memory if 3D acceleration available	
-	glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE);
-
+	glutInitDisplayMode(GLUT_RGBA | GLUT_DEPTH | GLUT_DOUBLE);
 
 	// Define the main window size and initial position 
 	// ( upper left corner, boundaries included )
